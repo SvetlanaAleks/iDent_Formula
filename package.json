@@ -42,6 +42,7 @@
   },
   "dependencies": {
     "body-scroll-lock": "^2.5.7",
-    "object-fit-images": "^3.2.4"
+    "object-fit-images": "^3.2.4",
+    "slick-carousel": "^1.8.1"
   }
 }
