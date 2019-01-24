@@ -2,5 +2,6 @@
 //=require ../../node_modules/slick-carousel/slick/slick.min.js
 //=require partials/app.js
 //=require partials/advanteges.js
+//=require partials/result.js
 
 
