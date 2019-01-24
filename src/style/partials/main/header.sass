@@ -1,3 +1,62 @@
 .header
 	background-color: #e4f2f6
-	padding-top: 160px
+	padding-top: 155px
+	padding-bottom: 118px
+	&__wrap
+		display: flex
+		justify-content: space-between
+		position: relative
+		.girl
+			position: absolute
+			bottom: -121px
+			left: 381px
+			pointer-events: none
+	&__order
+		margin-top: -24px
+.info-list
+	position: relative
+	&__title
+		text-align: left
+		font-size: 77px
+		line-height: 0.78
+		color: #1e1e1e
+		margin-bottom: 24px
+	&__desc
+		font-size: 28px
+		font-weight: 500
+		line-height: 1.21
+		color: #1e1e1e
+		margin-bottom: 48px
+	&__plus
+		.item
+			font-size: 20px
+			font-style: italic
+			line-height: 1.1
+			color: #444444
+			padding-left: 60px
+			position: relative
+			+nlt
+				margin-bottom: 33px
+			.fico
+				box-shadow: -0.1px 1px 2px 0 rgba(0, 0, 0, 0.2)
+				color: #ffffff
+				font-size: 20px
+				width: 40px
+				height: 40px
+				background-color: #e1a400
+				border-radius: 50%
+				position: absolute
+				left: 0
+				top: 50%
+				transform: translateY(-50%)
+				display: flex
+				align-items: center
+				justify-content: center
+			&__ttl
+				font-weight: 700
+				display: block
+				color: #1464a5
+	.product
+		position: absolute
+		bottom: -188px
+		left: 376px

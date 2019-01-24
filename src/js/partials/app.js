@@ -1,7 +1,7 @@
 const App = (function() {
   "use strict";
   const menuBtn = $(".js_menu-show");
-
+  const nav = $(".js_nav");
   return {
     shouMainMenu: function() {
       const menu = $(".menu-wrap");
