@@ -1,0 +1,33 @@
+.foot
+	font-size: 16px
+	line-height: 1.5
+	color: #666666
+	position: relative
+	padding-top: 73px
+	padding-bottom: 50px
+	+r(1199)
+		padding-bottom: 30px
+	&::before
+		content: ''
+		display: block
+		position: absolute
+		top: -87px
+		left: 0
+		right: 0
+		height: 94px
+		background: url('../img/line-top.png') no-repeat center top
+		+r(1199)
+			top: -70px
+		+r(1023)
+			display: none
+	&__col
+		display: flex
+		flex-direction: column
+		align-items: center
+	.everad
+		margin-bottom: 12px
+		max-width: 100%
+		width: 54px
+	.link
+		text-decoration: none
+		color: #666666
