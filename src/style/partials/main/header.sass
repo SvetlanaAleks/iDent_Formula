@@ -2,32 +2,120 @@
 	background-color: #e4f2f6
 	padding-top: 155px
 	padding-bottom: 118px
+	+r(1199)
+		padding-bottom: 77px
+		padding-top: 145px
+	+r(1023)
+		padding-top: 78px
+		padding-bottom: 40px
+	+r(767)
+		padding-bottom: 30px
+	+r(479)
+		padding-bottom: 25px
+		padding-top: 55px
 	&__wrap
 		display: flex
 		justify-content: space-between
 		position: relative
+		+r(1023)
+			flex-direction: column
+			justify-content: center
 		.girl
 			position: absolute
 			bottom: -121px
 			left: 381px
 			pointer-events: none
+			max-width: 100%
+			+r(1199)
+				width: 530px
+				left: 346px
+				bottom: -80px
+			+r(1023)
+				width: 459px
+				left: 36px
+				bottom: -40px
+			+r(767)
+				width: 448px
+				left: 20px
+				bottom: -40px
+			+r(639)
+				display: none
 	&__order
 		margin-top: -24px
+		+r(1199)
+			margin-top: 0
+		+r(1023)
+			margin-left: auto
+		+r(639)
+			margin: auto
 .info-list
 	position: relative
+	margin-right: auto
+	+r(1023)
+		margin-bottom: 100px
+	+r(639)
+		margin: auto
+		text-align: center
 	&__title
 		text-align: left
 		font-size: 77px
 		line-height: 0.78
 		color: #1e1e1e
 		margin-bottom: 24px
+		+r(1199)
+			font-size: 70px
+			line-height: 0.78
+			margin-bottom: 20px
+		+r(1023)
+			font-size: 65px
+			line-height: .85
+			margin-bottom: 15px
+			text-align: center
+			.hide
+				display: none
+		+r(767)
+			font-size: 56px
+			line-height: .85
+			margin-bottom: 10px
+		+r(639)
+			font-size: 50px
+		+r(479)
+			font-size: 36px
+			line-height: .8
 	&__desc
 		font-size: 28px
 		font-weight: 500
 		line-height: 1.21
 		color: #1e1e1e
 		margin-bottom: 48px
+		+r(1199)
+			font-size: 26px
+			margin-bottom: 40px
+		+r(1023)
+			font-size: 22px
+			line-height: 1.1
+			text-align: center
+			margin-bottom: 15px
+			br
+				display: none
+		+r(767)
+			font-size: 20px
+			margin-bottom: 10px
+		+r(639)
+			font-size: 18px
+			margin-bottom: 20px
 	&__plus
+		+r(1023)
+			display: flex
+			justify-content: space-between
+			align-items: flex-start
+		+r(639)
+			flex-direction: column
+			width: 360px
+			margin: auto
+			margin-bottom: 20px
+		+r(479)
+			width: 280px
 		.item
 			font-size: 20px
 			font-style: italic
@@ -35,8 +123,21 @@
 			color: #444444
 			padding-left: 60px
 			position: relative
+			+r(1023)
+				padding-left: 52px
+				font-size: 18px
+			+r(767)
+				padding-left: 33px
+			+r(639)
+				text-align: left
 			+nlt
 				margin-bottom: 33px
+				+r(1023)
+					margin-bottom: 0
+					margin-right: 7px
+				+r(639)
+					margin-right: 0
+					margin-bottom: 15px
 			.fico
 				box-shadow: -0.1px 1px 2px 0 rgba(0, 0, 0, 0.2)
 				color: #ffffff
@@ -52,11 +153,34 @@
 				display: flex
 				align-items: center
 				justify-content: center
+				+r(767)
+					width: 27px
+					height: 27px
+					font-size: 16px
 			&__ttl
 				font-weight: 700
 				display: block
 				color: #1464a5
+				+r(767)
+					display: inline
+				+r(479)
+					display: block
 	.product
 		position: absolute
 		bottom: -188px
 		left: 376px
+		max-width: 100%
+		+r(1199)
+			left: 334px
+			width: 360px
+		+r(1023)
+			left: 34px
+			width: 300px
+			bottom: -576px
+		+r(767)
+			left: 9px
+		+r(639)
+			position: static
+			margin-bottom: 90px
+		+r(479)
+			width: 300px
