@@ -5,3 +5,6 @@
 //=require partials/result.js
 
 
+$(document).ready(function() {
+  App.init();
+});

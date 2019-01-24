@@ -1,0 +1,83 @@
+.header-bottom
+	background-color: #e4f2f6
+	padding-bottom: 73px
+	padding-top: 70px
+	&__wrap
+		display: flex
+		justify-content: space-between
+		position: relative
+		+r(1023)
+			flex-direction: column
+			justify-content: center
+		.girl
+			position: absolute
+			bottom: -48px
+			left: 382px
+			pointer-events: none
+			max-width: 100%
+			+r(1199)
+				width: 530px
+				left: 346px
+				bottom: -80px
+			+r(1023)
+				width: 459px
+				left: 36px
+				bottom: -40px
+			+r(767)
+				width: 448px
+				left: 20px
+				bottom: -40px
+			+r(639)
+				display: none
+	&__order
+		margin-left: auto
+		margin-top: 9px
+		+r(1199)
+			margin-top: 0
+		+r(1023)
+			margin-left: auto
+		+r(639)
+			margin: auto
+	.info-list
+		+r(1023)
+			margin-bottom: 60px
+		&__title
+			margin-bottom: 19px
+			+r(1199)
+				margin-bottom: 20px
+			+r(1023)
+				margin-bottom: 15px
+			+r(767)
+				margin-bottom: 10px
+		&__desc
+			margin-bottom: 42px
+			+r(1199)
+				margin-bottom: 40px
+			+r(1023)
+				margin-bottom: 15px
+			+r(767)
+				margin-bottom: 10px
+			+r(639)
+				margin-bottom: 20px
+		&__plus
+			.item
+				+nlt
+					margin-bottom: 26px
+		.product
+			bottom: -118px
+			left: 364px
+			z-index: 3
+			+r(1199)
+				left: 334px
+				width: 321px
+			+r(1023)
+				left: 34px
+				width: 300px
+				bottom: -576px
+			+r(767)
+				left: 9px
+			+r(639)
+				position: static
+				margin-bottom: 16px
+			+r(479)
+				width: 300px
