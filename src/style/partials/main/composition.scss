@@ -1,0 +1,124 @@
+.composition {
+  padding-top: 108px;
+  padding-bottom: 170px;
+  background-color: #e4f2f6;
+
+  &__content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    width: 370px;
+    &--left {
+      text-align: left;
+    }
+    &--right {
+      text-align: right;
+    }
+    &-title {
+      color: #1e1e1e;
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 36px;
+      margin-top: 52px;
+    }
+  }
+  &__text {
+    opacity: 0.9;
+    color: #4d5257;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 26px;
+    &--bold {
+
+    }
+  }
+  &__num {
+    position: absolute;
+    text-shadow: 3px 4px 3px rgba(96, 124, 132, 0.08);
+    color: #ffffff;
+    font-style: italic;
+    font-size: 130px;
+    font-weight: 900;
+    line-height: 1;
+    top: 0;
+    &--left {
+      right: 0;
+    }
+    &--right {
+      left: 0;
+    }
+  }
+  &__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 260px;
+    border-radius: 50%;
+    height: 260px;
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow: 10px 17px 35px rgba(66, 97, 106, 0.2);
+    border: 7px solid #ffffff;
+    background-color: #fff;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    &--el {
+      position: absolute;
+      &-1 {
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      &-2 {
+        top: 106px;
+        left: 82px;
+        animation: rotate-center 10s linear 2s infinite both;
+      }
+      &-3 {
+        top: 77px;
+        left: 138px;
+        animation: rotate-center 10s linear 2s infinite both;
+      }
+      &-4 {
+        top: 123px;
+        left: 172px;
+        animation: rotate-center 10s linear 2s infinite both;
+      }
+    }
+  }
+  &__teath {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px;
+  }
+  &__subtitle {
+    width: 100%;
+    text-align: center;
+    color: #252525;
+    font-size: 21px;
+    font-style: italic;
+    line-height: 26px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .composition {
+
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .composition {
+
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .composition {
+
+  }
+}
