@@ -1,10 +1,34 @@
 .order
 	padding: 50px 0
+	padding-bottom: 100px
+	position: relative
+	&::after
+		content: ''
+		display: block
+		position: absolute
+		bottom: -68px
+		left: 0
+		right: 0
+		height: 94px
+		background: url('../img/line-bottom.png') no-repeat center bottom
+		+r(1023)
+			display: none
 	&__title
 		margin-bottom: 49px
 	&__content
 		display: flex
 		justify-content: space-around
+		counter-reset: section
+		position: relative
+		&::before
+			content: ''
+			display: block
+			position: absolute
+			left: 218px
+			top: 150px
+			background: url(../img/line-order.png) no-repeat center center
+			height: 98px
+			width: 698px
 		.item
 			width: 260px
 			text-align: center
@@ -14,15 +38,36 @@
 			&:nth-of-type(3)
 				margin-top: 122px
 			&::before
-				content: ''
-				display: block
+				content: "Шаг " counter(section)
+				counter-increment: section
+				display: flex
+				align-items: center
+				justify-content: flex-start
+				padding-left: 20px
 				position: absolute
-				width: 187px
+				width: 167px
 				height: 44px
 				top: 0
 				left: 0
+				color: white
+				font-size: 34.5px
+				font-weight: 700
+				font-style: italic
+				line-height: 1.36
 				background: linear-gradient(90deg, #0d73b9, #0fa7dd ,#0d73b9)
 				clip-path: polygon(0 0, 100% 1%, 85% 100%, 0% 100%)
+			&:nth-of-type(1)
+				&::before
+					top: 11px
+					left: -38px
+			&:nth-of-type(2)
+				&::before
+					top: 13px
+					left: -31px
+			&:nth-of-type(3)
+				&::before
+					top: 18px
+					left: -18px
 			&__img
 				box-shadow: 10px 17.3px 35px 0 rgba(66, 97, 106, 0.2)
 				border-radius: 50%
