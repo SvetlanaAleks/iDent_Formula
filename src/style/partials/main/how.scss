@@ -1,6 +1,32 @@
 .how {
-  padding-top: 122px;
-  padding-bottom: 100px;
+  padding-top: 69px;
+  padding-bottom: 65px;
+  position: relative;
+  &__title {
+    position: relative;
+    z-index: 3;
+  }
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -52px;
+    left: 0;
+    right: 0;
+    height: 94px;
+    background: url("../img/line-top_2.png") no-repeat center top;
+  }
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -54px;
+    left: 0;
+    right: 0;
+    height: 183px;
+    background: url("../img/line-top_2.png") no-repeat center bottom;
+    transform: rotate(180deg);
+  }
   &__content {
     margin-top: 60px;
     width: 100%;
@@ -19,7 +45,7 @@
       margin-top: 66px;
       &::before {
         position: absolute;
-        content: '';
+        content: "";
         width: 698px;
         height: 98px;
         transform: scale(-1, 1);
@@ -40,7 +66,7 @@
     width: 187px;
     height: 45px;
     color: #ffffff;
-    background: linear-gradient(90deg, #0d73b9, #0fa7dd ,#0d73b9);
+    background: linear-gradient(90deg, #0d73b9, #0fa7dd, #0d73b9);
     clip-path: polygon(0 0, 100% 1%, 85% 100%, 0% 100%);
     font-size: 35px;
     font-weight: 700;
@@ -104,6 +130,7 @@
     font-style: italic;
     line-height: 26px;
     position: relative;
+    z-index: 3;
     &--el {
       position: absolute;
       z-index: -1;
@@ -114,7 +141,7 @@
         width: 37px;
       }
       &-2 {
-        left: calc(50% - 74px / 2 );
+        left: calc(50% - 74px / 2);
         top: -24px;
         animation: rotate-center 10s linear infinite both;
       }
@@ -126,19 +153,31 @@
     display: block;
     margin-right: auto;
     margin-left: auto;
+    position: relative;
+    z-index: 4;
   }
-
 }
 
 // for IE
-@media screen and (min-width:0\0) {
+@media screen and (min-width: 0\0) {
   .how__step {
-    background: linear-gradient(120deg, #0d73b9 0%, #0fa3d7 53%, #0d73ba 159px,rgba(255,255,255,0) 159px, rgba(255,255,255,0) 100%);
+    background: linear-gradient(
+      120deg,
+      #0d73b9 0%,
+      #0fa3d7 53%,
+      #0d73ba 159px,
+      rgba(255, 255, 255, 0) 159px,
+      rgba(255, 255, 255, 0) 100%
+    );
   }
 }
 
-@media screen and (max-width: 1199px){
+@media screen and (max-width: 1199px) {
   .how {
+    padding-top: 30px;
+    &::before {
+      bottom: -8px;
+    }
     &__content {
       margin-top: 30px;
     }
@@ -153,8 +192,12 @@
   }
 }
 
-@media screen and (max-width: 1023px){
+@media screen and (max-width: 1023px) {
   .how {
+    &::after,
+    &::before {
+      display: none;
+    }
     &__item {
       margin-top: 0;
       &-2 {
@@ -170,7 +213,8 @@
       top: 30px;
       left: 5px;
     }
-    &__foto, &__img {
+    &__foto,
+    &__img {
       width: 230px;
       height: 230px;
     }
@@ -180,13 +224,13 @@
       padding-left: 10px;
       & br,
       & br::after {
-        content: ' ';
+        content: " ";
       }
     }
   }
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 767px) {
   .how {
     &__item {
       margin-top: 30px;
@@ -220,4 +264,3 @@
     }
   }
 }
-

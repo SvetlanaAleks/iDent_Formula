@@ -1,6 +1,6 @@
 .advanteges {
-  padding: 50px 0;
-  padding: 146px;
+  padding-top: 146px;
+  padding-bottom: 74px;
   position: relative;
 }
 .advanteges::before {
@@ -13,7 +13,16 @@
   height: 94px;
   background: url("../img/line-top.png") no-repeat center top;
 }
-
+.advanteges::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -57px;
+  left: 0;
+  right: 0;
+  height: 94px;
+  background: url("../img/line-bottom.png") no-repeat center bottom;
+}
 .title-advanteges {
   max-width: 700px;
   margin-bottom: 73px;
@@ -307,7 +316,8 @@
   .advanteges {
     padding-top: 60px;
   }
-  .advanteges::before {
+  .advanteges::before,
+  .advanteges::after {
     display: none;
   }
   .advanteges__wrap {
@@ -328,6 +338,9 @@
     &::before {
       font-size: 95px;
     }
+  }
+  .advanteges__slider .slick-dots {
+    top: 0;
   }
 }
 
