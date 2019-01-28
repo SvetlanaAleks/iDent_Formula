@@ -34,8 +34,8 @@ sliderReviews.slick({
   slidesToScroll: 1,
   fade: true,
   dots: true,
-  prevArrow: '<button class="reviews__arrow reviews__arrow-prev"></button>',
-  nextArrow: '<button class="reviews__arrow reviews__arrow-next"></button>'
+  prevArrow: '<button class="arrow arrow-prev"></button>',
+  nextArrow: '<button class="arrow arrow-next"></button>'
 });
 
 previewPrev.click(function (e) {

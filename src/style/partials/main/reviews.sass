@@ -192,6 +192,10 @@
 			font-size: 18px
 		+r(1199)
 			line-height: 26px
+		+r(840)
+			line-height: 24px
+		+r(767)
+			line-height: 26px
 		+r(639)
 			line-height: 28px
 		+r(479)
@@ -297,44 +301,44 @@
 .reviews
 	.slick-dots
 		display: none !important
-	&__arrow
-		width: 57px
-		height: 57px
-		border-radius: 50%
-		background: #e1a400 url(../img/arrow-slider.svg) no-repeat center center / 60%
-		position: absolute
-		top: 0
-		left: 0
-		cursor: pointer
-		outline: none
-		border: none
-		z-index: 3
-		transition: 0.5s
-		&:hover
-			background-color: #029ed5
-		&-prev
-			top: 143px
-			left: -84px
-			+r(1560)
-				left: -64px
-			+r(767)
-				left: 0
-			+r(479)
-				top: 250px
-		&-next
-			transform: scale(-1, 1)
-			top: 143px
-			left: auto
-			right: -87px
-			+r(1560)
-				right: -67px
-			+r(767)
-				right: 0
-			+r(479)
-				top: 250px
+.arrow
+	width: 57px
+	height: 57px
+	border-radius: 50%
+	background: #e1a400 url(../img/arrow-slider.svg) no-repeat center center / 60%
+	position: absolute
+	top: 0
+	left: 0
+	cursor: pointer
+	outline: none
+	border: none
+	z-index: 3
+	transition: 0.5s
+	&:hover
+		background-color: #029ed5
+	&-prev
+		top: 143px
+		left: -84px
+		+r(1560)
+			left: -64px
+		+r(767)
+			left: 0
+		+r(479)
+			top: 250px
+	&-next
+		transform: scale(-1, 1)
+		top: 143px
+		left: auto
+		right: -87px
+		+r(1560)
+			right: -67px
+		+r(767)
+			right: 0
+		+r(479)
+			top: 250px
 .reviews
 	.center
 		text-align: center
 	&__btn
 		width: 293px
-		padding: 11px 5px 18px 0
+		padding: 10px 5px 18px 0
