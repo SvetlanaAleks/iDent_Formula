@@ -1,6 +1,5 @@
 .expert {
-  padding: 50px 0;
-  padding-top: 115px;
+  padding: 115px 0 130px;
   position: relative;
 }
 .expert::after {
@@ -13,7 +12,16 @@
   height: 94px;
   background: url("../img/line-top.png") no-repeat center top;
 }
-
+.expert::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -57px;
+  left: 0;
+  right: 0;
+  height: 94px;
+  background: url("../img/line-bottom.png") no-repeat center bottom;
+}
 .title-expert {
   margin-bottom: 63px;
 }

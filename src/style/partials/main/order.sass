@@ -1,5 +1,5 @@
 .order
-	padding: 50px 0
+	padding-top: 117px
 	padding-bottom: 100px
 	position: relative
 	&::after
@@ -11,6 +11,17 @@
 		right: 0
 		height: 94px
 		background: url('../img/line-bottom.png') no-repeat center bottom
+		+r(1023)
+			display: none
+	&::before
+		content: ''
+		display: block
+		position: absolute
+		top: -57px
+		left: 0
+		right: 0
+		height: 94px
+		background: url("../img/line-top.png") no-repeat center top
 		+r(1023)
 			display: none
 	&__title

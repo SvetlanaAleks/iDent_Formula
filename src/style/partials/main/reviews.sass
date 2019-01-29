@@ -1,5 +1,33 @@
 .reviews
 	padding: 50px 0
+	position: relative
+	+r(1199)
+		padding-top: 10px
+	&::before
+		content: ''
+		display: block
+		position: absolute
+		top: -57px
+		left: 0
+		right: 0
+		height: 94px
+		background: url("../img/line-top_2.png") no-repeat center top
+		+r(1023)
+			display: none
+	&::after
+		content: ''
+		display: block
+		position: absolute
+		bottom: -99px
+		left: 0
+		right: 0
+		height: 215px
+		background: url("../img/line-top_2.png") no-repeat center bottom
+		transform: rotate(180deg)
+		+r(1199)
+			bottom: -45px
+		+r(1023)
+			display: none
 	.slick-initialized .slick-slide
 		display: flex
 		padding: 20px
@@ -11,6 +39,8 @@
 		margin-bottom: 66px
 		+r(1199)
 			margin-bottom: 40px
+			position: relative
+			z-index: 1
 		+r(1023)
 			margin-bottom: 20px
 		+r(479)
@@ -302,6 +332,8 @@
 	color: #4791af
 	display: block
 	text-align: center
+	position: relative
+	z-index: 10
 .reviews
 	.slick-dots
 		display: none !important
@@ -346,3 +378,5 @@
 	&__btn
 		width: 293px
 		padding: 10px 5px 18px 0
+		position: relative
+		z-index: 10

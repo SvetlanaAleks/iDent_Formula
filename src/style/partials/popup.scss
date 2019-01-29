@@ -1,0 +1,77 @@
+.popup {
+   width: 770px;
+   border-radius: 6px;
+   background-color: #e4f2f6;
+   position: relative;
+   .form-big{
+      position: relative;
+      z-index: 4;
+   }
+   &__wrapper {
+     display: flex;
+     width: 100%;
+     padding-top: 35px;
+     padding-right: 68px;
+     padding-bottom: 30px;
+   }
+   &__prod {
+     width: calc(100% - 270px);
+     & img {
+       position: absolute;
+     }
+     &--pack {
+      width: 326px;
+      z-index: 6;
+      bottom: -64px;
+      left: 7px;
+     }
+     &--girl {
+      width: 524px;
+      z-index: 4;
+      left: 0;
+      bottom: 0;
+     }
+   }
+ }
+ .ever-popup__inner {
+   padding-top: 0 !important;
+ }
+ .ever-popup__close {
+   top: 32px !important;
+   right: 21px !important;
+   width: 24px !important;
+   height: 24px !important;
+ }
+ .ever-popup__close:after, .ever-popup__close:before {
+   background: #fd3232 !important;
+   height: 3px !important;
+   border-radius: 5px;
+   width: 30px !important;
+ }
+ 
+ 
+ @media only screen and (max-width: 1023px) {
+   .popup {
+     width: 270px;
+     background-color: transparent;
+     &__wrapper {
+       padding: 0;
+     }
+     &__prod {
+       display: none;
+     }
+     & .form-big::after {
+       display: none;
+     }
+ 
+   }
+   .ever-popup__inner {
+     padding-top: 25px !important;
+   }
+   .ever-popup__close {
+     top: 0px !important;
+     right: 0px !important;
+     width: 23px !important;
+     height: 24px !important;
+   }
+ }

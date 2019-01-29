@@ -29,7 +29,7 @@
 
 
 .composition {
-  padding-top: 108px;
+  padding-top: 93px;
   padding-bottom: 170px;
   background-color: #e4f2f6;
 
@@ -167,6 +167,7 @@
 
 @media screen and (max-width: 1199px) {
   .composition {
+    padding-bottom: 120px;
     &__content {
       margin-top: 30px;
     }

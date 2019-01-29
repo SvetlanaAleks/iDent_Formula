@@ -1,13 +1,10 @@
 .result {
-	padding: 50px 0;
-	background: #e4f2f6;
-
-	background-image: url('../img/mol__bg.png'),url('../img/ident__bg.png'), url('../img/ident__bg.png');
-    background-position: center center, calc(50% - 936px) center, calc(50% + 1155px) center;
-    background-repeat: no-repeat;
+	background-color: #e4f2f6;
+	background-image: url('../img/mol__bg.png'), url('../img/ident__bg.png'), url('../img/ident__bg.png');
+  background-position: center center, calc(50% - 936px) center, calc(50% + 1155px) center;
+  background-repeat: no-repeat;
   padding-top: 154px;
   padding-bottom: 90px;
-  background: #e4f2f6;
 }
 
 .title-result {
