@@ -31,6 +31,9 @@
   }
 }
 .work {
+  background-image: url('../img/ident__bg.png'), url('../img/ident__bg.png'), url('../img/ident__bg.png'),url('../img/mol__bg.png');
+  background-position: calc(50% - 1328px) center, calc(50% - 265px) center, calc(50% + 800px) center, center center;
+  background-repeat: no-repeat;
   padding-top: 97px;
   padding-bottom: 145px;
   text-align: center;
@@ -183,6 +186,7 @@
 
 @media screen and (max-width: 1023px) {
   .work {
+    background-image: none;
     &__content {
       align-items: flex-end;
     }
