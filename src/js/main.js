@@ -4,6 +4,8 @@
 //=require partials/app.js
 //=require partials/advanteges.js
 //=require partials/result.js
+//=require partials/feature.js
+//=require partials/faq.js
 
 $(document).ready(function () {
   App.init();
