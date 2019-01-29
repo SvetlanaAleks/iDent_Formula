@@ -3,6 +3,9 @@
   background-image: url('../img/ident__bg.png'), url('../img/ident__bg.png');
   background-position: calc(50% - 1076px) center, calc(50% + 1052px) center;
   background-repeat: no-repeat;
+  .item__link--one{
+    color: #e0af0d;
+  }
   &__content {
     width: 100%;
     background-image: url('../img/mol__bg.png');

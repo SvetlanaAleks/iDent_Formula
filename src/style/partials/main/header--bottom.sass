@@ -2,13 +2,20 @@
 	background-color: #e4f2f6
 	padding-bottom: 73px
 	padding-top: 85px
+	background-image: url('../img/ident__bg.png')
+	background-position: calc(81% - -89px) 195px
+	background-repeat: repeat-x
+	+r(1023)
+		background-image: none
 	&__wrap
 		display: flex
 		justify-content: space-between
 		position: relative
+		background: url('../img/mol__bg.png') no-repeat 360px 10px
 		+r(1023)
 			flex-direction: column
 			justify-content: center
+			background: none
 		.girl
 			position: absolute
 			bottom: -48px

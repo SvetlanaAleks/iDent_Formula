@@ -1,11 +1,11 @@
-const App = (function() {
+const App = (function () {
   "use strict";
   const menuBtn = $(".js_menu-show");
   const nav = $(".js_nav");
   return {
-    shouMainMenu: function() {
+    shouMainMenu: function () {
       const menu = $(".menu-wrap");
-      menuBtn.click(function(e) {
+      menuBtn.click(function (e) {
         e.preventDefault();
         const _this = $(this);
         _this.toggleClass("menu--active");
@@ -18,13 +18,13 @@ const App = (function() {
         nav.toggleClass("nav--active");
       });
     },
-    eventScrollMenu: function() {
+    eventScrollMenu: function () {
       const element = $(".js_none");
 
       const DOC = $(document);
       const scrollHeight = 150;
 
-      DOC.scroll(function() {
+      DOC.scroll(function () {
         const scrollTop = DOC.scrollTop();
         const percent = (1 - scrollTop / scrollHeight).toFixed(2);
         if (percent > 0.95) {
@@ -40,9 +40,26 @@ const App = (function() {
         }
       });
     },
-    init: function() {
+    scrollToTarget: function () {
+      $(".js_scrollTo").click(function (e) {
+        e.preventDefault();
+        const target = $(this).attr('href');
+        if ($(target).length) {
+          $('html, body').animate({
+            scrollTop: $(target).offset().top
+          }, 800);
+        } else {
+          window.location.href = './index.html' + target;
+        }
+
+      });
+    },
+    init: function () {
       App.shouMainMenu();
       App.eventScrollMenu();
+      App.scrollToTarget();
     }
   };
 })();
+
+
