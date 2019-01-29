@@ -1,187 +1,233 @@
 .expert {
-	padding: 50px 0;
+  padding: 50px 0;
+  padding-top: 115px;
+  position: relative;
+}
+.expert::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -57px;
+  left: 0;
+  right: 0;
+  height: 94px;
+  background: url("../img/line-top.png") no-repeat center top;
 }
 
 .title-expert {
-	margin-bottom: 63px;
+  margin-bottom: 63px;
 }
 
 .expert__wrap {
-	display: flex;
-	justify-content: flex-start;
-	align-items: flex-start;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .expert__img {
-	max-width: 454px;
-	box-shadow: 5px 5px 20px 7px rgba(66,97,106,.2);
-	background: #fff;
+  max-width: 454px;
+  box-shadow: 5px 5px 20px 7px rgba(66, 97, 106, 0.2);
+  background: #fff;
 
-	padding: 20px;
+  padding: 20px;
 
-	transform: rotate(-1deg);
-	img {
-		display: block;
-		max-width: 100%;
-	}
+  transform: rotate(-1deg);
+  img {
+    display: block;
+    max-width: 100%;
+  }
 }
 
 .expert__left {
-	max-width: 470px;
-	flex-shrink: 0;
+  max-width: 470px;
+  flex-shrink: 0;
 }
 
 .expert__right {
-	margin-left: 46px;
+  margin-left: 46px;
 }
 
 .expert__name {
-	font-size: 24px;
-	line-height: 1;
-	font-weight: 700;
-	color: #ffffff;
-	padding: 10px 42px 10px 17px;
-	background: linear-gradient(90deg, #0d73b9, #0fa7dd ,#0d73b9);
-	display: inline-block;
-	-webkit-clip-path: polygon(0 0, 100% 1%, 85% 100%, 0% 100%);
-	clip-path: polygon(0 0, 100% 1%, 85% 100%, 0% 100%);
-	margin-bottom: 22px;
-	margin-top: 9px;
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 700;
+  color: #ffffff;
+  padding: 10px 42px 10px 17px;
+  background: linear-gradient(90deg, #0d73b9, #0fa7dd, #0d73b9);
+  display: inline-block;
+  -webkit-clip-path: polygon(0 0, 100% 1%, 85% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 1%, 85% 100%, 0% 100%);
+  margin-bottom: 22px;
+  margin-top: 9px;
 }
 // for IE
-@media screen and (min-width:0\0) {
-	.expert__name {
-	    background-image: linear-gradient(120deg, #0d73b9 0%, #0fa3d7 53%, #0d73ba 180px,rgba(255,255,255,0) 180px, rgba(255,255,255,0) 100%);
-	}
+@media screen and (min-width: 0\0) {
+  .expert__name {
+    background-image: linear-gradient(
+      120deg,
+      #0d73b9 0%,
+      #0fa3d7 53%,
+      #0d73ba 180px,
+      rgba(255, 255, 255, 0) 180px,
+      rgba(255, 255, 255, 0) 100%
+    );
+  }
 }
+@media screen and (min-width: 0\0) {
+  .reviews .name,
+  .reviews-video .name {
+    display: block;
+    background-image: linear-gradient(
+      120deg,
+      #0d73b9 0%,
+      #0fa3d7 53%,
+      #0d73ba 180px,
+      rgba(255, 255, 255, 0) 180px,
+      rgba(255, 255, 255, 0) 100%
+    );
+  }
 
+  .reviews-video .name {
+    display: block;
+    background-image: linear-gradient(
+      120deg,
+      #0d73b9 0%,
+      #0fa3d7 53%,
+      #0d73ba 210px,
+      rgba(255, 255, 255, 0) 210px,
+      rgba(255, 255, 255, 0) 100%
+    );
+  }
+}
 .expert__who {
-	font-size: 19px;
-	line-height: 1;
-	font-style: italic;
-	letter-spacing: -0.3px;
-	color: #4d5257;
+  font-size: 19px;
+  line-height: 1;
+  font-style: italic;
+  letter-spacing: -0.3px;
+  color: #4d5257;
 
-	margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .expert__quotes {
-	font-size: 22px;
-	line-height: 1;
-	font-weight: 700;
-	color: #232323;
-	margin-bottom: 33px;
+  font-size: 22px;
+  line-height: 1;
+  font-weight: 700;
+  color: #232323;
+  margin-bottom: 33px;
 }
 
 .expert__text {
-	font-size: 19px;
-	line-height: 1.4;
-	color: #4d5257;
-    // letter-spacing: 1.1px;
-	
-	margin-bottom: 25px;
-	&:last-child {
-		margin-bottom: 0;
-	}
+  font-size: 19px;
+  line-height: 1.4;
+  color: #4d5257;
+  // letter-spacing: 1.1px;
+
+  margin-bottom: 25px;
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .expert__text-bold {
-	font-weight: 700;
-	color: #232323;
+  font-weight: 700;
+  color: #232323;
 }
 
 @include r(1199) {
-	.expert__img {
-		max-width: 400px;
-	}
+  .expert__img {
+    max-width: 400px;
+  }
 
-	.title-expert {
-		margin-bottom: 40px;
-	}
+  .title-expert {
+    margin-bottom: 40px;
+  }
 
-	.expert__right {
-		margin-left: 30px;
-	}
+  .expert__right {
+    margin-left: 30px;
+  }
 
-	.expert__name {
-		margin-top: 0;
-		margin-bottom: 15px;
-	}
+  .expert__name {
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
 
-	.expert__quotes {
-		margin-bottom: 15px;
-	}
+  .expert__quotes {
+    margin-bottom: 15px;
+  }
 
-	.expert__text {
-		font-size: 18px;
-		margin-bottom: 15px;
-		br {
-			display: none;
-		}
-	}
+  .expert__text {
+    font-size: 18px;
+    margin-bottom: 15px;
+    br {
+      display: none;
+    }
+  }
 }
 
 @include r(1023) {
-	.expert__text {
-		font-size: 17px;
-		margin-bottom: 10px;
-	}
+  .expert::after {
+    display: none;
+  }
+  .expert__text {
+    font-size: 17px;
+    margin-bottom: 10px;
+  }
 
-	.expert__img {
-		max-width: 280px;
-		padding: 10px;
-	}
+  .expert__img {
+    max-width: 280px;
+    padding: 10px;
+  }
 
-	.expert__wrap {
-		align-items: center;
-	}
+  .expert__wrap {
+    align-items: center;
+  }
 }
 
 @include r(767) {
-	
-	.title-expert {
-		margin-bottom: 20px;
-	}
+  .title-expert {
+    margin-bottom: 20px;
+  }
 
-	.expert__wrap {
-		flex-direction: column;
-	}
+  .expert__wrap {
+    flex-direction: column;
+  }
 
-	.expert__img {
-		max-width: 250px;
-		transform: rotate(0deg);
-	}
+  .expert__img {
+    max-width: 250px;
+    transform: rotate(0deg);
+  }
 
-	.expert__left {
-		margin-bottom: 20px;
-	}
+  .expert__left {
+    margin-bottom: 20px;
+  }
 
-	.expert__right {
-		margin-left: 0;
-	}
+  .expert__right {
+    margin-left: 0;
+  }
 
-	.expert__name {
-		display: block;
-		max-width: 222px;
-		margin: 0 auto 10px;
-	}
+  .expert__name {
+    display: block;
+    max-width: 222px;
+    margin: 0 auto 10px;
+  }
 
-	.expert__who {
-		text-align: center;
-		margin-bottom: 20px;
-	}
+  .expert__who {
+    text-align: center;
+    margin-bottom: 20px;
+  }
 
-	.expert__quotes {
-		font-size: 21px;
-	}
+  .expert__quotes {
+    font-size: 21px;
+  }
 }
 
 @include r(479) {
-	.expert__quotes {
-		font-size: 20px;
-	}
+  .expert__quotes {
+    font-size: 20px;
+  }
 
-	.expert__who {
-		margin-bottom: 15px;
-	}
+  .expert__who {
+    margin-bottom: 15px;
+  }
 }
