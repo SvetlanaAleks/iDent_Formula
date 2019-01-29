@@ -106,33 +106,34 @@
     overflow: hidden;
     &--el {
       position: absolute;
-      &-1 {
-        top: 0;
-        left: 50%;
-        transform: translateX(-50%);
-      }
+
       &-2 {
+        width: 33px;
         top: 106px;
         left: 82px;
         animation: rotate-center 10s linear 2s infinite both;
       }
       &-3 {
+        width: 35px;
         top: 77px;
         left: 138px;
         animation: rotate-center 10s linear 2s infinite both;
       }
       &-4 {
+        width: 27px;
         top: 123px;
         left: 172px;
         animation: rotate-center 10s linear 2s infinite both;
       }
       &-21 {
+        width: 178px;
         animation: opacity-star1 3s infinite linear;
         animation-delay: 2s;
         top: 49px;
         left: 38px;
       }
       &-31 {
+        width: 68px;
         animation: opacity-star 2s infinite linear;
         top: 46px;
         right: 18px;
