@@ -1,6 +1,10 @@
 .result {
 	padding: 50px 0;
 	background: #e4f2f6;
+
+	background-image: url('../img/mol__bg.png'),url('../img/ident__bg.png'), url('../img/ident__bg.png');
+    background-position: center center, calc(50% - 936px) center, calc(50% + 1155px) center;
+    background-repeat: no-repeat;
 }
 
 .title-result {
@@ -34,6 +38,9 @@
 	position: relative;
 	&:last-child {
 		margin-right: 0;
+		&::after {
+			display: none;
+		}
 	}
 	&::before {
 		content: '';
@@ -56,6 +63,16 @@
 			background: url(../img/tooth3.png) no-repeat center center / contain;
 		}
 	}
+	&::after {
+		content: '';
+		width: 16px;
+		height: 16px;
+		border-radius: 50%;
+		background: #fff;
+		position: absolute;
+		bottom: 115px;
+		right: -16px;
+	}
 }
 
 .result__number {
@@ -64,6 +81,8 @@
 	font-weight: 900;
 	font-style: italic;
 	color: #4791af;
+
+	display: inline-block;
 
 	margin-bottom: 13px;
 
@@ -87,6 +106,7 @@
 	font-size: 50px;
 	line-height: 1;
 	font-weight: 700;
+	color: #4791af;
 }
 
 .result__text {
@@ -111,6 +131,18 @@
 
 	max-width: 350px;
 	margin: 0 auto;
+	position: relative;
+	&::before {
+		content: '';
+		width: 16px;
+		height: 16px;
+		border-radius: 50%;
+		background: #fff;
+		position: absolute;
+		top: -40px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
 }
 
 @include r(1199) {
@@ -144,6 +176,15 @@
 	.result__item{
 		&:before {
 			bottom: 120px;
+		}
+		&:after {
+			display: none;
+		}
+	}
+
+	.result__bottom {
+		&::before {
+			display: none;
 		}
 	}
 }

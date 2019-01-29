@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="13.938" viewBox="0 0 21 13.938">
+<defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="1633" y="375.062" width="21" height="13.938" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dx="-0.139" dy="0.99" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="1.414"/>
+      <feFlood result="flood" flood-opacity="0.2"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+      <feFlood result="flood-2" flood-color="#fff"/>
+      <feComposite result="composite-2" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend-2" in2="blend"/>
+    </filter>
+  </defs>
+  <path id="Rounded_Rectangle_3_copy" data-name="Rounded Rectangle 3 copy" class="cls-1" d="M1634.28,385.28l0.82,0.564a0.509,0.509,0,0,0,.7-0.121l8.03-9.317a0.483,0.483,0,0,0-.12-0.686l-0.82-.564a0.5,0.5,0,0,0-.69.121l-8.04,9.317A0.491,0.491,0,0,0,1634.28,385.28Zm16.62,0.564,0.82-.564a0.491,0.491,0,0,0,.12-0.686l-8.04-9.317a0.5,0.5,0,0,0-.69-0.121l-0.82.564a0.483,0.483,0,0,0-.12.686l8.03,9.317A0.509,0.509,0,0,0,1650.9,385.844Z" transform="translate(-1633 -375.062)"/>
+</svg>

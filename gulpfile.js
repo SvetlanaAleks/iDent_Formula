@@ -35,7 +35,7 @@ var path = {
     svg: "src/svg/*.svg",
     sprite: "src/sprite/**/*.+(jpg|jpeg|png)",
     spriteSVG: "src/spriteSVG/*.svg",
-    svgico: "src/svgico/*.svg",
+    // svgico: "src/svgico/*.svg",
     video: "src/video/*.*",
     favicon: "src/favicon/*.*",
     fonts: "src/fonts/**/*.*"
@@ -70,7 +70,7 @@ var path = {
     sprite: "src/sprite/**/*.+(jpg|jpeg|png)",
     spriteSVG: "src/spriteSVG/*.svg",
     svg: "src/svg/*.svg",
-    svgico: "src/svgico/*.svg",
+    // svgico: "src/svgico/*.svg",
     favicon: "src/**/*.*",
     video: "src/video/*.*",
     fonts: "src/fonts/**/*.*"
@@ -345,33 +345,33 @@ gulp.task("spriteSVG:build", function() {
     .pipe(gulp.dest("src/img/svg"));
 });
 
-gulp.task("svg-ico:build", function() {
-  return gulp
-    .src(path.src.svgico)
-    .pipe(wait(1000))
-    .pipe(svgo())
-    .pipe(
-      iconfontCss({
-        fontName: "fico", // required
-        target: "src/style/partials/font-icons.scss",
-        targetPath: "../../style/partials/font-icons.scss",
-        fontPath: "../fonts/icons/",
-        cssClass: "fico"
-      })
-    )
-    .pipe(
-      iconfont({
-        fontName: "fico", // required
-        prependUnicode: true, // recommended option
-        formats: ["ttf", "eot", "woff", "woff2", "svg"], // default, 'woff2' and 'svg' are available
-        normalize: true,
-        fontHeight: 1001,
-        fontStyle: "normal",
-        fontWeight: "normal"
-      })
-    )
-    .pipe(gulp.dest("src/fonts/icons"));
-});
+// gulp.task("svg-ico:build", function() {
+//   return gulp
+//     .src(path.src.svgico)
+//     .pipe(wait(1000))
+//     .pipe(svgo())
+//     .pipe(
+//       iconfontCss({
+//         fontName: "fico", // required
+//         target: "src/style/partials/font-icons.scss",
+//         targetPath: "../../style/partials/font-icons.scss",
+//         fontPath: "../fonts/icons/",
+//         cssClass: "fico"
+//       })
+//     )
+//     .pipe(
+//       iconfont({
+//         fontName: "fico", // required
+//         prependUnicode: true, // recommended option
+//         formats: ["ttf", "eot", "woff", "woff2", "svg"], // default, 'woff2' and 'svg' are available
+//         normalize: true,
+//         fontHeight: 1001,
+//         fontStyle: "normal",
+//         fontWeight: "normal"
+//       })
+//     )
+//     .pipe(gulp.dest("src/fonts/icons"));
+// });
 
 gulp.task("fonts:build", function() {
   gulp.src(path.src.fonts).pipe(gulp.dest(path.build.fonts));
@@ -398,7 +398,7 @@ gulp.task("build", [
   "style:build",
   "svg:build",
   "clean-fonts",
-  "svg-ico:build",
+  // "svg-ico:build",
   "image:build",
   "sprite:build",
   "spriteSVG:build",
@@ -415,7 +415,7 @@ gulp.task("deploy", [
   "fonts:deploy",
   "svg:deploy",
   "spriteSVG:build",
-  "svg-ico:build",
+  // "svg-ico:build",
   "image:deploy"
 ]);
 
@@ -438,9 +438,9 @@ gulp.task("watch", function() {
   watch([path.watch.svg], function(event, cb) {
     gulp.start("svg:build");
   });
-  watch([path.watch.svgico], function(event, cb) {
-    gulp.start("svg-ico:build");
-  });
+  // watch([path.watch.svgico], function(event, cb) {
+  //   gulp.start("svg-ico:build");
+  // });
   watch([path.watch.img], function(event, cb) {
     gulp.start("image:build");
   });
