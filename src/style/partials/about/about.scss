@@ -1,0 +1,148 @@
+.about {
+  background-color: #e4f2f6;
+  background-image: url('../img/ident__bg.png'), url('../img/ident__bg.png');
+  background-position: calc(50% - 1076px) center, calc(50% + 1052px) center;
+  background-repeat: no-repeat;
+  &__content {
+    width: 100%;
+    background-image: url('../img/mol__bg.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-top: 246px;
+    padding-bottom: 70px;
+  }
+  &__main-title {
+    color: #1e1e1e;
+    font-size: 75px;
+    font-weight: 900;
+    line-height: 64px;
+  }
+  &__title {
+    margin-top: 27px;
+    color: #2e2e2e;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+  }
+  &__text {
+    color: #4d5257;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 30px;
+    &--1 {
+      margin-top: 42px;
+    }
+    &--2 {
+      margin-top: 33px;
+    }
+    &--3 {
+      margin-top: 30px;
+    }
+    &--4 {
+      margin-top: 30px;
+    }
+  }
+  &__logo {
+    color: #0094d0;
+    font-weight: 700;
+  }
+  &__subtitle {
+    margin-top: 38px;
+    color: #2e2e2e;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+  }
+  &__btn {
+    margin-top: 46px;
+  }
+}
+
+@media screen and (max-width: 1199px){
+  .about {
+    &__content {
+      margin-top: 120px;
+    }
+    &__main-title {
+      font-size: 65px;
+      line-height: 1;
+    }
+    &__text {
+      line-height: 1.4;
+      margin-top: 30px;
+    }
+    &__title,
+    &__subtitle {
+      margin-top: 30px;
+      line-height: 1;
+    }
+    &__btn {
+      margin-top: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 1023px){
+  .about {
+    background-image: none;
+    &__content {
+      margin-top: 100px;
+      padding-bottom: 40px;
+      background-image: none;
+    }
+    &__main-title {
+      font-size: 55px;
+    }
+    &__text {
+      font-size: 18px;
+      margin-top: 25px;
+    }
+    &__title,
+    &__subtitle {
+      font-size: 22px;
+      margin-top: 25px;
+    }
+    &__btn {
+      margin-top: 25px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about {
+    &__content {
+      padding-bottom: 30px;
+    }
+    &__main-title {
+      font-size: 45px;
+    }
+    &__text {
+      font-size: 17px;
+      margin-top: 20px;
+    }
+    &__title,
+    &__subtitle {
+      font-size: 20px;
+      margin-top: 20px;
+    }
+    &__btn {
+      margin-top: 20px;
+    }
+  }
+}
+@media screen and (max-width: 639px) {
+  .about {
+    &__btn {
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+}
+@media screen and (max-width: 479px) {
+  .about {
+    &__content {
+      margin-top: 80px;
+      padding-bottom: 25px;
+    }
+  }
+}
