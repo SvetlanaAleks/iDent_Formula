@@ -162,15 +162,19 @@
 		line-height: 50px
 		padding-left: 13px
 		padding-right: 21px
-		width: 170px
-		max-width: 100%
-		background: linear-gradient(90deg, #0d73b9, #0fa7dd ,#0d73b9)
+		// width: 170px
+		// max-width: 100%
+		display: inline-block
+		background: linear-gradient(90deg, #0d73b9, #0fa7dd, #0d73b9)
+		-webkit-clip-path: polygon(0 0, 100% 1%, 85% 100%, 0% 100%)
 		clip-path: polygon(0 0, 100% 1%, 85% 100%, 0% 100%)
 		+r(1300)
 			margin-bottom: 15px
 		+r(1199)
 			line-height: 42px
 		+r(767)
+			width: 170px
+			display: block
 			margin: auto
 			margin-bottom: 10px
 			font-size: 26px

@@ -73,7 +73,32 @@
     );
   }
 }
+@media screen and (min-width: 0\0) {
+  .reviews .name,
+  .reviews-video .name {
+    display: block;
+    background-image: linear-gradient(
+      120deg,
+      #0d73b9 0%,
+      #0fa3d7 53%,
+      #0d73ba 180px,
+      rgba(255, 255, 255, 0) 180px,
+      rgba(255, 255, 255, 0) 100%
+    );
+  }
 
+  .reviews-video .name {
+    display: block;
+    background-image: linear-gradient(
+      120deg,
+      #0d73b9 0%,
+      #0fa3d7 53%,
+      #0d73ba 210px,
+      rgba(255, 255, 255, 0) 210px,
+      rgba(255, 255, 255, 0) 100%
+    );
+  }
+}
 .expert__who {
   font-size: 19px;
   line-height: 1;
