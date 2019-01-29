@@ -29,11 +29,15 @@
 
 
 .composition {
+  background-image: url('../img/ident__bg.png'), url('../img/ident__bg.png'), url('../img/ident__bg.png'),url('../img/mol__bg.png');
+  background-position: calc(50% - 1328px) center, calc(50% - 265px) center, calc(50% + 800px) center, center center;
+  background-repeat: no-repeat;
   padding-top: 93px;
   padding-bottom: 170px;
   background-color: #e4f2f6;
 
   &__content {
+
     margin-top: 47px;
     width: 100%;
     display: flex;
@@ -87,9 +91,9 @@
     }
   }
   &__img {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    //display: flex;
+    //align-items: center;
+    //justify-content: center;
     width: 314px;
     border-radius: 50%;
     height: 314px;
@@ -98,22 +102,22 @@
     box-shadow: 10px 17px 35px rgba(66, 97, 106, 0.2);
     border: 7px solid #ffffff;
     background-color: #fff;
-    position: absolute;
-    left: calc( 50% - 314px / 2 );
-    top: 0;
+    //position: absolute;
+    //left: calc( 50% - 314px / 2 );
+    //top: 0;
     z-index: 2;
     overflow: hidden;
-    &--1 {
-      animation: opacity-img1 12s infinite linear;
-    }
-    &--2 {
-      animation: opacity-img2 12s infinite linear;
-      //animation-delay: 2s;
-    }
-    &--3 {
-      animation: opacity-img3 12s infinite linear;
-      //animation-delay: 4s;
-    }
+    //&--1 {
+    //  animation: opacity-img1 12s infinite linear;
+    //}
+    //&--2 {
+    //  animation: opacity-img2 12s infinite linear;
+    //  //animation-delay: 2s;
+    //}
+    //&--3 {
+    //  animation: opacity-img3 12s infinite linear;
+    //  //animation-delay: 4s;
+    //}
     &--el {
       position: absolute;
       z-index: 3;
@@ -136,9 +140,9 @@
   }
   &__foto {
     width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
+    //position: absolute;
+    //top: 0;
+    //left: 0;
     &--1 {
     }
     &--2 {
@@ -191,6 +195,7 @@
 
 @media screen and (max-width: 1023px) {
   .composition {
+    background-image: none;
     &__img {
       width: 230px;
       height: 230px;
