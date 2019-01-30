@@ -10,3 +10,18 @@
 $(document).ready(function () {
   App.init();
 });
+
+
+$(document).ready(function () {
+  function animateLink() {
+    var link = location.hash;
+    if (link) {
+      var top = $('[data-id="' + link.replace('#', "") + '"]').offset().top;
+      console.log(link);
+      $('body,html').animate({ scrollTop: top }, 800);
+    }
+  }
+
+  animateLink();
+
+})

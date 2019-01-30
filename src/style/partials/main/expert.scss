@@ -174,14 +174,16 @@
 }
 
 @include r(1023) {
-  .expert::after {
+  .expert::after, .expert::before {
     display: none;
   }
   .expert__text {
     font-size: 17px;
     margin-bottom: 10px;
   }
-
+  .title-expert{
+    margin-bottom: 25px;
+  }
   .expert__img {
     max-width: 280px;
     padding: 10px;

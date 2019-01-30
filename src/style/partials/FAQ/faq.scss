@@ -216,7 +216,7 @@
 }
 
 @include r(479) {
-	.title {
+	.title-faq {
 		font-size: 36px;
 		line-height: 1.1;
 	}
@@ -232,7 +232,12 @@
 			font-size: 80px;
 		}
 	}
-
+	.work__item{
+		width: 260px;
+	}
+	.work__img{
+		margin-right: auto;
+	}
 	.faq__arrow {
 		width: 35px;
 		height: 35px;

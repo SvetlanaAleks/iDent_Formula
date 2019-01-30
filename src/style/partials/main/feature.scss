@@ -224,6 +224,9 @@
 	}
 
 @include r(1199) {
+	.title-feature{
+		margin-bottom: 65px;
+	}
 	.feature__fixed {
 		width: 210px;
 	}
@@ -423,7 +426,7 @@
 
 }
 
-@include r(640) {
+@include r(639) {
 
 	.feature__slider {
 		max-width: 300px;
@@ -447,7 +450,9 @@
 	.feature__row {
 		padding: 10px;
 	}
-
+	.title-feature{
+		margin-bottom: 0;
+	}
 	.feature__fixed {
 		width: 140px;
 	}

@@ -54,10 +54,8 @@
 			max-width: 750px
 		+r(1440)
 			max-width: 700px
-		+r(1300)
-			max-width: 620px
-		+r(1199)
-			max-width: 525px
+		+r(1249)
+			max-width: 800px
 		+r(1023)
 			max-width: 670px
 		+r(840)
@@ -73,9 +71,6 @@
 	+r(1300)
 		width: 900px
 	+r(1199)
-		width: 760px
-		margin-bottom: 23px
-	+r(767)
 		width: 100%
 	+r(639)
 		margin-bottom: 21px
@@ -94,6 +89,8 @@
 			margin-right: 140px
 		+r(1199)
 			margin-right: 119px
+		+r(1249)
+			margin-right: 150px
 		+r(767)
 			margin-right: 0
 			margin-bottom: 55px
@@ -149,9 +146,9 @@
 	background: white
 	+r(1440)
 		width: 190px
-	+r(1199)
-		width: 155px
-	+r(1023)
+	+r(1260)
+		width: 172px
+	+r(1249)
 		width: 200px
 	+r(479)
 		padding: 8px 8px 33px
@@ -176,9 +173,9 @@
 	+r(767)
 		max-height: 190px
 	&-active
-		max-height: 700px
+		max-height: 1000px
 		+r(767)
-			max-height: 700px
+			max-height: 1000px
 		&~.show-btn
 			&::before
 				display: none
@@ -267,7 +264,7 @@
 	top: 82px
 	z-index: 0
 	cursor: pointer
-	+r(1023)
+	+r(1249)
 		display: none
 	&:hover
 		.preview-item__content
@@ -286,6 +283,7 @@
 			right: -84px
 			+r(1300)
 				left: 54px
+				width: 100px
 			&::after
 				content: ''
 				width: 55px
@@ -315,15 +313,13 @@
 		+r(1440)
 			left: -120px
 		+r(1300)
-			left: -97px
-		+r(1199)
-			left: -112px
+			left: -137px
 	&--next 
 		right: -86px
 		+r(1440)
 			right: -36px
-		+r(1199)
-			right: -56px
+		+r(1300)
+			right: -83px
 
 
 .paging

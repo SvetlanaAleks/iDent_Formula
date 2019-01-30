@@ -40,18 +40,17 @@ const App = (function () {
         }
       });
     },
-    scrollToTarget: function () {
+    scrollToTarget: function scrollToTarget() {
       $(".js_scrollTo").click(function (e) {
         e.preventDefault();
-        const target = $(this).attr('href');
+        var target = $(this).attr('href');
         if ($(target).length) {
           $('html, body').animate({
-            scrollTop: $(target).offset().top
+            scrollTop: $(target).offset().top - 100
           }, 800);
         } else {
-          window.location.href = './index.html' + target;
+          window.location.href = './' + target;
         }
-
       });
     },
     init: function () {
