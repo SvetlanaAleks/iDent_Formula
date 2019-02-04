@@ -4,6 +4,8 @@
 	background-color: #ffffff
 	padding: 50px 18px 15px 18px
 	position: relative
+	+r(767)
+		padding-top: 20px
 	&::after
 		content: ''
 		display: block
@@ -18,8 +20,10 @@
 		display: block
 		position: absolute
 		top: -67px
-		left: 59px
+		left: 72px
 		+sprite($pick-form)
+		+r(767)
+			display: none
 	.form-ttl
 		margin-bottom: 6px
 	.price

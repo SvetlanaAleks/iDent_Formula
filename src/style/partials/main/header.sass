@@ -55,6 +55,8 @@
 	margin-right: auto
 	+r(1023)
 		margin-bottom: 100px
+	+r(767)
+		margin-bottom: 30px
 	+r(639)
 		margin: auto
 		text-align: center
@@ -182,10 +184,28 @@
 			bottom: -559px
 		+r(767)
 			left: 9px
-			bottom: -406px
+			bottom: -346px
 			width: 300px
 		+r(639)
 			position: static
-			margin-bottom: 90px
+			margin-bottom: 20px
 		+r(479)
 			width: 300px
+	.img-wrap
+		position: relative
+		+r(767)
+			&:before
+				content: ''
+				display: block
+				position: absolute
+				top: 63px
+				left: 192px
+				z-index: 10
+				+sprite($pick-form)
+		+r(639)
+			&:before
+				top: -29px
+				left: 262px
+		+r(479)
+			&:before
+				display: none
