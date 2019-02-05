@@ -1,29 +1,40 @@
-@keyframes opacity-img {
-  0%   { opacity: 0; }
-  45% { opacity: .95; }
-  50% { opacity: 1; }
-  55% { opacity: .95; }
-  100%   { opacity: 0; }
+@keyframes star {
+  0% {
+    opacity: 0;
+    transform: translateY(0px);
+  }
+  2% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+    transform: translateY(70px);
+  }
+  100% {
+    opacity: 0;
+  }
 }
-
 @keyframes opacity-img1 {
   0%   { opacity: 1; }
-  40% { opacity: 0; }
-  90% { opacity: 0; }
-  97% { opacity: 1; }
-
+  25% { opacity: 1; }
+  37.5% { opacity: 0; }
+  87.5% { opacity: 0; }
+  100% { opacity: 1; }
 }
 @keyframes opacity-img2 {
   0%   { opacity: 0; }
-  33% { opacity: 1; }
-  66% { opacity: 0; }
+  25% { opacity: 0; }
+  37.5% { opacity: 1; }
+  50% { opacity: 1; }
+  62.5% { opacity: 0; }
   100% { opacity: 0; }
 }
 @keyframes opacity-img3 {
   0%   { opacity: 0; }
-  33%   { opacity: 0; }
-  66% { opacity: 1; }
-  90% { opacity: 1; }
+  33% { opacity: 0; }
+  50% { opacity: 0; }
+  62.5% { opacity: 1; }
+  87.5% { opacity: 1; }
   100% { opacity: 0; }
 }
 
@@ -44,6 +55,7 @@
     justify-content: space-between;
   }
   &__item {
+    height: 314px;
     width: 370px;
     position: relative;
     &--left {
@@ -91,9 +103,6 @@
     }
   }
   &__img {
-    //display: flex;
-    //align-items: center;
-    //justify-content: center;
     width: 314px;
     border-radius: 50%;
     height: 314px;
@@ -102,56 +111,57 @@
     box-shadow: 10px 17px 35px rgba(66, 97, 106, 0.2);
     border: 7px solid #ffffff;
     background-color: #fff;
-    //position: absolute;
-    //left: calc( 50% - 314px / 2 );
-    //top: 0;
+    position: absolute;
+    left: calc( 50% - 314px / 2 );
+    top: 0;
     z-index: 2;
     overflow: hidden;
-    //&--1 {
-    //  animation: opacity-img1 12s infinite linear;
-    //}
-    //&--2 {
-    //  animation: opacity-img2 12s infinite linear;
-    //  //animation-delay: 2s;
-    //}
-    //&--3 {
-    //  animation: opacity-img3 12s infinite linear;
-    //  //animation-delay: 4s;
-    //}
+    &--1 {
+      animation: opacity-img1 8s infinite linear;
+    }
+    &--2 {
+      animation: opacity-img2 8s infinite linear;
+    }
+    &--3 {
+      animation: opacity-img3 8s infinite linear;
+    }
     &--el {
       position: absolute;
       z-index: 3;
       &-2 {
-        top: 106px;
-        left: 82px;
-        animation: rotate-center 10s linear 2s infinite both;
+        top: 70px;
+        left: 100px;
+        animation: star 8s linear infinite both;
       }
       &-3 {
-        top: 77px;
-        left: 138px;
-        animation: rotate-center 10s linear 2s infinite both;
+        top: 40px;
+        left: 150px;
+        animation: star 8s linear infinite both;
       }
       &-4 {
-        top: 123px;
-        left: 172px;
-        animation: rotate-center 10s linear 2s infinite both;
+        top: 80px;
+        left: 210px;
+        animation: star 8s linear infinite both;
+      }
+      &-5 {
+        top: 65px;
+        left: 40px;
+      }
+      &-6 {
+        top: 50px;
+        left: 180px;
       }
     }
   }
+
   &__foto {
     width: 100%;
-    //position: absolute;
-    //top: 0;
-    //left: 0;
-    &--1 {
-    }
-    &--2 {
+    position: absolute;
+    top: 0;
+    left: 0;
 
-    }
-    &--3 {
-
-    }
   }
+
   &__teath {
     display: block;
     margin-right: auto;
@@ -199,8 +209,39 @@
     &__img {
       width: 230px;
       height: 230px;
+      left: calc(50% - 230px / 2);
+      &--el {
+
+        &-2 {
+          width: 33px;
+          top: 40px;
+          left: 50px;
+        }
+        &-3 {
+          width: 35px;
+          top: 10px;
+          left: 90px;
+        }
+        &-4 {
+          width: 27px;
+          top: 50px;
+          left: 150px;
+        }
+        &-5 {
+          width: 150px;
+          top: 40px;
+          left: 30px;
+        }
+        &-6 {
+          width: 68px;
+          top: 30px;
+          left: auto;
+          right: 18px;
+        }
+      }
     }
     &__item {
+      height: auto;
       &-title {
         font-size: 24px;
       }
@@ -235,6 +276,7 @@
       margin-right: 10px;
       margin-left: 10px;
       &--img {
+        height: 230px;
         margin-right: auto;
         margin-left: auto;
         margin-top: 20px;
