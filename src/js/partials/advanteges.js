@@ -15,3 +15,35 @@ $('.advanteges__slider').slick({
     ]
 });
 
+
+let flag = true;
+
+$(".advanteges__before").mouseenter(function(){
+  if (flag) {
+    flag = false;
+    $(this).removeClass('out').addClass('over');
+    $(this).next().removeClass('out').addClass('over');
+    $(this).next().addClass('start');
+  } else {
+    return;
+  }
+  setTimeout(function(){
+    flag = true;
+  }, 800)
+
+});
+
+$(".advanteges__after").mouseenter(function(){
+  if (flag === true && $(this).hasClass('start')) {
+    flag = false;
+    $(this).removeClass('over').addClass('out');
+    $(this).prev().removeClass('over').addClass('out');
+    $(this).removeClass('start');
+  } else {
+    return;
+  }
+  setTimeout(function(){
+    flag = true;
+  }, 800)
+});
+
